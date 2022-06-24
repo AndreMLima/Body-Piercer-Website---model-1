@@ -1,0 +1,42 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 160vh;
+}
+
+.name{
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.section-photo {
+    width: 50%;
+    height: 160vh;
+    overflow: hidden;
+    background-image: url(./Images/Background.png);
+}
+
+.div-photo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.photo{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 25%;
+    border-radius: 10%;
+    width: 25em;
+    box-shadow: 10px 15px 50px rgb(122, 75, 91);
+}
