@@ -1,42 +1,97 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+
+/* General Info */
+html {
+    font-family: Montserrat;
+}
+
+* {
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    height: 160vh;
+body {
+    height: 180vh;
 }
 
-.name{
+
+/* Section 1 */
+.name {
     display: flex;
     position: absolute;
     margin-left: 5%;
     margin-top: 3%;
+    font-size: 100;
 }
 
-.section-photo {
+.background-photo {
+    position: fixed;
     width: 50%;
-    height: 160vh;
+    height: 100vh;
     overflow: hidden;
     background-image: url(./Images/Background.png);
 }
 
-.div-photo{
+.div-photo {
     display: flex;
     position: relative;
     justify-content: center;
+    background-color: black;
 }
 
-.photo{
+.photo {
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: 25%;
+    margin-top: 12%;
+    margin-right: 50%;
     border-radius: 10%;
     width: 25em;
     box-shadow: 10px 15px 50px rgb(122, 75, 91);
+}
+
+
+/* Section 2 */
+.info{
+    margin-left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+
+.background-info{
+    position: absolute;
+    width: 50%;
+    height: 180vh;
+    overflow: hidden;
+    background-color: rgb(250, 217, 217);
+    border-left: .1em solid rgb(189, 163, 163);
+}
+
+.title1{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 55%;
+    min-width: 45%;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+.title2{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 46%;
+    height: 70%;
+    min-width: 45%;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-decoration-thickness: 10px;
 }
