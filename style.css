@@ -9,6 +9,7 @@ html {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -18,11 +19,20 @@ body {
 
 
 /* Section 1 */
+.section-photo{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 140vh;
+}
+
 .name {
     display: flex;
     position: absolute;
-    margin-left: 5%;
-    margin-top: 3%;
+    left: 10%;
+    top: 5%;
+    width: 50%;
+    height: 5%;
     font-size: 100;
 }
 
@@ -30,15 +40,17 @@ body {
     position: fixed;
     width: 50%;
     height: 100vh;
-    overflow: hidden;
     background-image: url(./Images/Background.png);
 }
 
 .div-photo {
     display: flex;
-    position: relative;
-    justify-content: center;
-    background-color: black;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    width: 60%;
+    height: 55%;
+    border-radius: 10%;
 }
 
 .photo {
@@ -47,77 +59,65 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: 12%;
-    margin-right: 50%;
-    border-radius: 10%;
-    width: 25em;
     box-shadow: 10px 15px 50px rgb(122, 75, 91);
+    border-radius: 10%;
+    width: 100%;
 }
 
 
 /* Section 2 */
 .info{
+    display: flex;
     position: relative;
-    margin-left: 50%;
-    width: fit-content;
+    position: relative;
+    width: 50%;
     height: 140vh;
+    left: 50%;
     background-color: #9ad4eb;
     border-left: .1em solid #336072;
-    overflow: visible;
 }
 
-/* .background-info{
-    position: absolute;
-    height: 180vh;
-    overflow: hidden;
-    border-left: .1em solid #336072;
-} */
-
 .title{
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 10em;
+    display: flex;
+    position: absolute;
+    width: 70%;
+    height: 15%;
+    left: 20%;
+    top: 25%;
     font-size: 3em;
     letter-spacing: .1em;
-    margin-top: 22%;
-    margin-left: 3em;
 }
 
 .paragraph{
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 20em;
-    margin-top: 3%;
-    margin-left: 9em;
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    left: 20%;
+    top: 40%;
 }
 
 .nav-btns{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 20em;
-    margin-top: 3%;
-    margin-left: 21%;
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    left: 20%;
+    top: 49%;
 }
 
 .button{
-    display: block;
+    display: inline;
     cursor: pointer;
     border-radius: 8px;
-    /* border: .1em solid rgb(189, 163, 163); */
     border: .1em solid #336072;
     font-weight: 700;
     letter-spacing: .1em;
-    margin-left: 33%;
-    width: 32em;
-    height: 2.5em;
-    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
 }
 
 .button:hover{
@@ -129,16 +129,23 @@ body {
 .nav-icons{
     display: flex;
     flex-direction: row;
-    position: relative;
-    margin-top: 1.5em;
-    margin-left: 47.5%;
+    position: absolute;
+    width: 60%;
+    height: 3%;
+    top: 74%;
+    left: 20%;
 }
 
 .btn-icon{
+    display: flex;
     cursor: pointer;
-    margin: 0 1em 0 0;
     background: transparent;
     border: none;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    left: 35%;
+    margin-right: 10%;
 }
 
 .icon{
