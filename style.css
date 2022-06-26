@@ -15,8 +15,19 @@ html {
 
 body {
     height: 140vh;
+    display: flex;
+    flex-direction: row;
 }
 
+/* Transitions of all pages */
+@keyframes show-page {
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
 
 /* Section 1 */
 .section-photo{
@@ -24,6 +35,7 @@ body {
     position: absolute;
     width: 50%;
     height: 140vh;
+    animation: show-page 3s forwards;
 }
 
 .name {
@@ -34,6 +46,7 @@ body {
     width: 50%;
     height: 5%;
     font-size: 100;
+    cursor: pointer;
 }
 
 .background-photo {
@@ -156,4 +169,116 @@ body {
 .icon:hover{
     width: 2.5em;
     transition: .3s ease;
+}
+
+/* Section 3 */
+
+.section-piercings{
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 140vh;
+    animation: show-page 3s forwards;
+    background-color: white;
+}
+
+.nav-piercings{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 13%;
+    top: 23%;
+    width: 80%;
+    height: 60%;
+}
+
+.nav-piercings-individual{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 24%;
+    margin-bottom: 9%;
+}
+
+.piercing{
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(122, 75, 91);
+    border-radius: 8px;
+    width: 30%;
+    height: 100%;
+    margin-right: 3%;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+}
+
+.piercing:hover{
+    width: 50%;
+    height: 120%;
+    transition: .6s ease;
+}
+
+.img-piercing{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Section 4 */
+
+.section-jobs{
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 140vh;
+    animation: show-page 3s forwards;
+    background-color: white;
+}
+
+.nav-jobs{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 13%;
+    top: 23%;
+    width: 80%;
+    height: 60%;
+}
+
+.nav-jobs-individual{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 24%;
+    margin-bottom: 9%;
+}
+
+.jobs{
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(122, 75, 91);
+    border-radius: 8px;
+    width: 30%;
+    height: 100%;
+    margin-right: 3%;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+}
+
+.jobs:hover{
+    width: 50%;
+    height: 120%;
+    transition: .6s ease;
+}
+
+.img-jobs{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
