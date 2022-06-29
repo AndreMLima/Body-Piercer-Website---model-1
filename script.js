@@ -69,7 +69,7 @@ function carousel(){
 };
 
 
-// Interaction with the back and forwards piercings buttons
+// Interaction with the back and forwards jobs buttons
 
 const slidesJobs = document.querySelectorAll('.jobs');
 const nextBtn2 = document.querySelector('#nextBtn2');
@@ -102,5 +102,41 @@ function carousel2(){
 
     slidesJobs.forEach(function(slide2){
         slide2.style.transform = `translateX(-${counter2 * 100}%)`;
+    })
+};
+
+// Interaction with the back and forwards avaliations buttons
+
+const slidesAvaliations = document.querySelectorAll('.nav-avaliations');
+const nextBtn3 = document.querySelector('#nextBtn3');
+const prevBtn3 = document.querySelector('#prevBtn3');
+
+slidesAvaliations.forEach(function(slide3, index){
+    slide3.style.left = `${index * 100}%`;
+});
+
+let counter3 = 0;
+
+nextBtn3.addEventListener('click', function(){
+    counter3++;
+    carousel3();
+});
+
+prevBtn3.addEventListener('click', function(){
+    counter3--;
+    carousel3();
+});
+
+function carousel3(){
+
+    if(counter3 === slidesAvaliations.length){
+        counter3 = 0;
+    };
+    if(counter3 < 0){
+        counter3 = slidesAvaliations.length -1;
+    };
+
+    slidesAvaliations.forEach(function(slide3){
+        slide3.style.transform = `translateX(-${counter3 * 100}%)`;
     })
 };
