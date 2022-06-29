@@ -1,7 +1,7 @@
+// Interaction with the pages buttons
 const sectionPhoto = document.querySelector('.section-photo')
 const sectionPiercings = document.querySelector('.section-piercings')
 const sectionJobs = document.querySelector('.section-jobs')
-const sectionWpp = document.querySelector('.section-wpp')
 const sectionAvaliations = document.querySelector('.section-avaliations')
 const btn1 = document.querySelector('.btn1')
 const btn2 = document.querySelector('.btn2')
@@ -10,34 +10,97 @@ const btn4 = document.querySelector('.btn4')
 
 btn1.onclick = function(){button1()};
 btn2.onclick = function(){button2()};
-btn3.onclick = function(){button3()};
 btn4.onclick = function(){button4()};
 
 function button1 (){
     sectionPhoto.style.display = "none";
     sectionPiercings.style.display = "flex";
     sectionJobs.style.display = "none";
-    sectionWpp.style.display = "none";
     sectionAvaliations.style.display = "none";
 }
 function button2 (){
     sectionPhoto.style.display = "none";
     sectionPiercings.style.display = "none";
     sectionJobs.style.display = "flex";
-    sectionWpp.style.display = "none";
-    sectionAvaliations.style.display = "none";
-}
-function button3 (){
-    sectionPhoto.style.display = "none";
-    sectionPiercings.style.display = "none";
-    sectionJobs.style.display = "none";
-    sectionWpp.style.display = "flex";
     sectionAvaliations.style.display = "none";
 }
 function button4 (){
     sectionPhoto.style.display = "none";
     sectionPiercings.style.display = "none";
     sectionJobs.style.display = "none";
-    sectionWpp.style.display = "none";
     sectionAvaliations.style.display = "flex";
 }
+
+
+// Interaction with the back and forwards piercings buttons
+
+const slides = document.querySelectorAll('.nav-piercings');
+const nextBtn = document.querySelector('#nextBtn');
+const prevBtn = document.querySelector('#prevBtn');
+
+slides.forEach(function(slide, index){
+    slide.style.left = `${index * 100}%`;
+});
+
+let counter = 0;
+
+nextBtn.addEventListener('click', function(){
+    counter++;
+    carousel();
+});
+
+prevBtn.addEventListener('click', function(){
+    counter--;
+    carousel();
+});
+
+function carousel(){
+
+    if(counter === slides.length){
+        counter = 0;
+    };
+    if(counter < 0){
+        counter = slides.length -1;
+    };
+
+    slides.forEach(function(slide){
+        slide.style.transform = `translateX(-${counter * 100}%)`;
+    })
+};
+
+
+// Interaction with the back and forwards piercings buttons
+
+const slidesJobs = document.querySelectorAll('.jobs');
+const nextBtn2 = document.querySelector('#nextBtn2');
+const prevBtn2 = document.querySelector('#prevBtn2');
+
+slidesJobs.forEach(function(slide2, index){
+    slide2.style.left = `${index * 100}%`;
+});
+
+let counter2 = 0;
+
+nextBtn2.addEventListener('click', function(){
+    counter2++;
+    carousel2();
+});
+
+prevBtn2.addEventListener('click', function(){
+    counter2--;
+    carousel2();
+});
+
+function carousel2(){
+
+    if(counter2 === slidesJobs.length){
+        counter2 = 0;
+    };
+    if(counter2 < 0){
+        counter2 = slidesJobs.length -1;
+    };
+
+    slidesJobs.forEach(function(slide2){
+        slide2.style.transform = `translateX(-${counter2 * 100}%)`;
+    })
+};

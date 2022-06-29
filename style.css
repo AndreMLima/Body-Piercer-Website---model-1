@@ -35,6 +35,7 @@ body {
     position: absolute;
     width: 50%;
     height: 140vh;
+    border-left: .1em solid #336072;
     animation: show-page 3s forwards;
 }
 
@@ -146,7 +147,7 @@ body {
     width: 60%;
     height: 3%;
     top: 74%;
-    left: 20%;
+    left: 15%;
 }
 
 .btn-icon{
@@ -182,14 +183,26 @@ body {
     background-color: white;
 }
 
+.piercings-slide{
+    display: flex;
+    position: relative;
+    left: 11%;
+    top: 23%;
+    height: 60%;
+    width: 80%;
+    overflow: hidden;
+}
+
+/*Animation for the piercings pages.*/
+
 .nav-piercings{
     display: flex;
     position: absolute;
     flex-direction: column;
-    left: 13%;
-    top: 23%;
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
 }
 
 .nav-piercings-individual{
@@ -206,11 +219,10 @@ body {
     position: relative;
     border: 1px solid rgb(122, 75, 91);
     border-radius: 8px;
-    width: 30%;
+    width: 33%;
     height: 100%;
     margin-right: 3%;
     cursor: pointer;
-    box-shadow: 5px 5px 15px black;
     overflow: hidden;
 }
 
@@ -221,6 +233,57 @@ body {
 }
 
 .img-piercing{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-piercings{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 10%;
+    height: 3%;
+    top: 83%;
+    left: 45%;
+}
+
+#prevBtn{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 4.5%;
+    height: 3%;
+    left: 4%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#prevBtn:hover{
+    width: 5.5%;
+    height: 4%;
+    transition: .3s ease;
+}
+
+#nextBtn{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 4.5%;
+    height: 3%;
+    right: 4%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#nextBtn:hover{
+    width: 5.5%;
+    height: 4%;
+    transition: .3s ease;
+}
+
+.bf-piercings{
     display: flex;
     position: absolute;
     width: 100%;
@@ -238,47 +301,112 @@ body {
     background-color: white;
 }
 
-.nav-jobs{
+.div-jobs {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 25%;
+    width: 60%;
+    height: 55%;
+    border-radius: 10%;
+    box-shadow: 10px 15px 50px rgb(122, 75, 91);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.jobs {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10%;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#prevBtn2{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 4.5%;
+    height: 3%;
+    left: 4%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#prevBtn2:hover{
+    width: 5.5%;
+    height: 4%;
+    transition: .3s ease;
+}
+
+#nextBtn2{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 4.5%;
+    height: 3%;
+    right: 4%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#nextBtn2:hover{
+    width: 5.5%;
+    height: 4%;
+    transition: .3s ease;
+}
+
+
+/* Section 5 */
+
+.section-avaliations{
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 140vh;
+    animation: show-page 3s forwards;
+    background-color: white;
+}
+
+.nav-avaliations{
     display: flex;
     position: absolute;
     flex-direction: column;
-    left: 13%;
+    left: 10%;
     top: 23%;
     width: 80%;
     height: 60%;
 }
 
-.nav-jobs-individual{
+.nav-avaliations-individual{
     display: flex;
     position: relative;
-    flex-direction: row;
     width: 100%;
     height: 24%;
     margin-bottom: 9%;
 }
 
-.jobs{
-    display: flex;
-    position: relative;
-    border: 1px solid rgb(122, 75, 91);
-    border-radius: 8px;
-    width: 30%;
-    height: 100%;
-    margin-right: 3%;
-    cursor: pointer;
-    box-shadow: 5px 5px 15px black;
-    overflow: hidden;
-}
-
-.jobs:hover{
-    width: 50%;
-    height: 120%;
-    transition: .6s ease;
-}
-
-.img-jobs{
+.img-avaliation{
     display: flex;
     position: absolute;
-    width: 100%;
+    left: 0;    
     height: 100%;
+    border-radius: 50%;
+}
+
+.title-avaliation{
+    display: flex;
+    position: absolute;
+    left: 32%;
+}
+
+.text-avaliation{
+    display: flex;
+    position: absolute;
+    left: 32%;
+    top: 30%;
 }
