@@ -83,7 +83,6 @@ body {
 .info{
     display: flex;
     position: relative;
-    position: relative;
     width: 50%;
     height: 140vh;
     left: 50%;
@@ -94,7 +93,7 @@ body {
 .title{
     display: flex;
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 15%;
     left: 20%;
     top: 25%;
@@ -455,4 +454,57 @@ body {
     width: 5.5%;
     height: 4%;
     transition: .3s ease;
+}
+
+
+
+/* Responsiveness */
+
+/* Responsiveness for the title */
+
+@media only screen and (max-width: 1200px) {
+    .title{
+        font-size: 2em;
+        transition: .5s ease;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info{
+        display: none;
+        width: 0;
+        transition: .8s ease;
+    }
+    .background-photo{
+        width: 100%;
+    }
+    .section-photo{
+        width: 100%;
+        transition: .8s ease;
+    }
+    .section-piercings{
+        width: 100%;
+        transition: .8s ease;
+    }
+    .section-jobs{
+        width: 100%;
+        transition: .8s ease;
+    }
+    .section-avaliations{
+        width: 100%;
+        transition: .8s ease;
+    }
+    .button-selection{
+        display: flex;
+        position: absolute;
+        width: 4%;
+        height: 4%;
+        right: 10%;
+        top: 4%;
+        cursor: pointer;
+    }
+    .button-selection:hover{
+        transform: rotate(90deg);
+        transition: .8s ease;
+    }
 }
