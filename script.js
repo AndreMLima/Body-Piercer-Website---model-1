@@ -7,10 +7,35 @@ const btn1 = document.querySelector('.btn1')
 const btn2 = document.querySelector('.btn2')
 const btn3 = document.querySelector('.btn3')
 const btn4 = document.querySelector('.btn4')
+const btn5 = document.querySelector('.btn5')
+const btn6 = document.querySelector('.btn6')
+const btn7 = document.querySelector('.btn7')
+const btn8 = document.querySelector('.btn8')
+const btn9 = document.querySelector('.btn9')
+const btn10 = document.querySelector('.btn10')
+const btn11 = document.querySelector('.btn11')
+const btn12 = document.querySelector('.btn12')
+const btn13 = document.querySelector('.btn13')
+const btn14 = document.querySelector('.btn14')
+const btn15 = document.querySelector('.btn15')
+const btn16 = document.querySelector('.btn16')
+
 
 btn1.onclick = function(){button1()};
 btn2.onclick = function(){button2()};
 btn4.onclick = function(){button4()};
+btn5.onclick = function(){button1()};
+btn6.onclick = function(){button2()};
+btn7.onclick = function(){button4()};
+btn8.onclick = function(){button1()};
+btn9.onclick = function(){button2()};
+btn10.onclick = function(){button4()};
+btn11.onclick = function(){button1()};
+btn12.onclick = function(){button2()};
+btn13.onclick = function(){button4()};
+btn14.onclick = function(){button1()};
+btn15.onclick = function(){button2()};
+btn16.onclick = function(){button4()};
 
 function button1 (){
     sectionPhoto.style.display = "none";

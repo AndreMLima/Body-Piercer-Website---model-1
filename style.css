@@ -461,6 +461,23 @@ body {
 /* Responsiveness */
 
 /* Responsiveness for the title */
+.button-selection{
+  display: none;
+}
+
+.hidden-links{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    right: 3%;
+    top: 9%;
+    width: 30%;
+    height: 30%;
+}
+
+.hidden-button{
+    display: none;
+}
 
 @media only screen and (max-width: 1200px) {
     .title{
@@ -494,17 +511,31 @@ body {
         width: 100%;
         transition: .8s ease;
     }
-    .button-selection{
+    .hidden-links{
         display: flex;
+        flex-direction: row;
         position: absolute;
-        width: 4%;
-        height: 4%;
-        right: 10%;
-        top: 4%;
-        cursor: pointer;
+        justify-content: space-between;
+        height: 5%;
+        width: 80%;
+        left: 10%;
+        top: 12%;
     }
-    .button-selection:hover{
-        transform: rotate(90deg);
+    .hidden-button{
+        display: inline;
+        cursor: pointer;
+        border-radius: 8px;
+        border: .1em solid #336072;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-align: center;
+        width: 60%;
+        height: 80%;
+        margin-bottom: 2%;
+    }
+    .hidden-button:hover{
+        background-color: #336072;
+        color: white;
         transition: .8s ease;
     }
 }
